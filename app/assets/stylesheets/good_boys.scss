@@ -1,6 +1,4 @@
-// Place all the styles related to the GoodBoys controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: lighten(gray, 30%);
 
 .page {
   display: flex;
@@ -15,6 +13,7 @@
     height: 30%;
 
     background-color: black;
+    color: white;
 
     .canvas-container {
       display: flex;
@@ -23,7 +22,14 @@
 
       h1 {
         margin: 0;
+      }
+
+      a {
         color: white;
+
+        &:hover {
+          color: $gray;
+        }
       }
     }
   }
@@ -31,6 +37,6 @@
   .gallery {
     height: 70%;
 
-    background-color: lighten(gray, 30%);
+    background-color: $gray;
   }
 }
